@@ -6,7 +6,7 @@ from core import settings
 
 
 @shared_task
-def send_mail_to_user(user: str, title: str, executed: int) -> None:
+def send_mail_to_user(user: str, title: str, executed: str) -> None:
     port = settings.EMAIL_PORT
     smtp_server = settings.EMAIL_HOST
     sender_email = settings.EMAIL_HOST_USER
